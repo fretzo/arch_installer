@@ -14,7 +14,7 @@ Fork Edit: testing to install with separate /home partition, added to linux linu
 
   **Example:**
   
-      curl -L https://github.com/slayerizer/arch_installer/archive/master.zip --output scripts.zip
+      curl -L https://github.com/fretzo/arch_installer/archive/master.zip --output scripts.zip
       bsdtar -x -f scripts.zip
       cd arch_installer-master
       chmod +x *.sh
