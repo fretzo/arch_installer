@@ -4,6 +4,8 @@ script to install arch linux very quickly. By default it will install a setup wi
 
 *Approximate time for install* : 2-3 minutes
 
+Fork Edit: testing to install with separate /home partition, added to linux linux-firmware to pacstrap & changed some of the installed packages ...
+
 # Installation
 
 - Boot the Arch linux iso
