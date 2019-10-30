@@ -9,7 +9,9 @@ echo "TARGET: $TARGET"
 # STANDARD
 mount ${TARGET}2 /mnt  ;
 mkdir /mnt/boot  
-mount ${TARGET}1 /mnt/boot; 
+mount ${TARGET}1 /mnt/boot;
+mkdir /mnt/home
+mount ${TARGET}3 /mnt/home;
 echo "- refreshing repositories"
 pacman -Syy &>/dev/null
 echo "- Installing base packages"
