@@ -2,8 +2,7 @@
 
 read -p "Enter user name (press ENTER with empty value to cancel): " USER_NAME
 if [ -n "$USER_NAME" ]; then
-  read -p "Enter a description: " USER_COMMENT
-  useradd -m "$USER_NAME" --comment "$USER_COMMENT" 1>/dev/null
+  useradd -m -g users -G wheel -s /bin/bash "$USER_NAME" 1>/dev/null
   passwd "$USER_NAME"
   while true; 
   do
