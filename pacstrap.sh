@@ -13,10 +13,10 @@ mount ${TARGET}1 /mnt/boot;
 echo "- refreshing repositories"
 pacman -Syy &>/dev/null
 echo "- Installing base packages"
-# pacstrap /mnt base base-devel pacman-contrib 
-pacstrap /mnt base pacman-contrib &>/dev/null
+# pacstrap /mnt base pacman-contrib linux linux-firmware - EDIT
+pacstrap /mnt base pacman-contrib linux linux-firmware &>/dev/null
 echo "- Installing extra utilities"
-pacstrap /mnt zip unzip vim nano mc nmon ncdu htop syslog-ng lsb-release bash-completion exfat-utils neofetch  &>/dev/null
+pacstrap /mnt zip unzip vim nmon ncdu htop syslog-ng lsb-release bash-completion exfat-utils usb_modeswitch neofetch  &>/dev/null
 echo "- Installing custom fonts"
 pacstrap /mnt terminus-font &>/dev/null
 echo "- Installing SSH and sudo"
