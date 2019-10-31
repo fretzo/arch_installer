@@ -27,4 +27,5 @@ echo '- chroot to new install'
 mkdir /mnt/scripts
 cp *.sh /mnt/scripts &>/dev/null
 cp font.txt /mnt/scripts &>/dev/null
+genfstab -U /mnt >> /mnt/etc/fstab
 arch-chroot /mnt /scripts/post-chroot.sh
